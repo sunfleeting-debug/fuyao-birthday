@@ -66,22 +66,22 @@ export const GROUPS = [
  */
 export const PHOTOS = [
   // ---------- 江与城 ----------
-  { slug: "river-01-luzhou", group: "river", orient: "p", hero: true,
-    caption: "柳州江边，白鹭雕塑前比了个耶。那天天是灰的，风很软。" },
-  { slug: "river-02-luzhou2", group: "river", orient: "p",
+  { slug: "river-01-xiangjiang", group: "river", orient: "p", hero: true,
+    caption: "湘江边，白鹭雕塑前比了个耶。那天天是灰的，风很软。" },
+  { slug: "river-02-xiangjiang2", group: "river", orient: "p",
     caption: "同一个位置，你换了个手势——但我更喜欢这一张。" },
   { slug: "river-03-four", group: "river", orient: "l", hero: true,
     caption: "四个人在栏杆前站成一排，背后是整条江。" },
   { slug: "river-04-skyline", group: "river", orient: "l",
-    caption: "江对岸是这座城市的天际线。你说那座桥看着比照片里长。" },
+    caption: "江对岸是这座城市的天际线。你说那座斜拉桥看着比照片里长。" },
   { slug: "river-05-mao", group: "river", orient: "p",
     caption: "橘子洲头，雕像底下。你说这尊像比照片里大得多。" },
   { slug: "river-06-selfie", group: "river", orient: "p",
-    caption: "拉着你合了张影。雕像比我们俩加起来还高。" },
+    caption: "和雕像的合影。它比我们加起来还高。" },
   { slug: "river-07-night", group: "river", orient: "l",
-    caption: "十月四号的夜，牌坊的蓝瓦被灯照亮了。" },
+    caption: "十月四号的夜，这座石牌坊被灯照得发白，你在台阶上站了很久。" },
   { slug: "river-08-nightwalk", group: "river", orient: "l",
-    caption: "下山路上，路灯把你的影子拉得很长。" },
+    caption: "夜深了，路上只剩灯光、树影和我们。" },
 
   // ---------- 砖与瓦 ----------
   { slug: "arch-01-temple", group: "arch", orient: "l", hero: true,
@@ -143,7 +143,7 @@ export const PHOTOS = [
   { slug: "hall-15-graffiti", group: "hall", orient: "l",
     caption: "涂鸦墙前，你旁边那只卡通人物比你上镜。" },
   { slug: "hall-16-mascot", group: "hall", orient: "p",
-    caption: "广场上有只巨大的公仔，你从它背后探出个头——底座上写着合肥。" },
+    caption: "广场上有只巨大的公仔，你从它背后探出个头——底座上写着「我爱合肥」。" },
 
   // ---------- 仗剑 ----------
   { slug: "sword-01-white", group: "sword", orient: "p", hero: true,
@@ -167,7 +167,7 @@ export const PHOTOS = [
   { slug: "us-01-pinkwall", group: "us", orient: "l",
     caption: "粉墙前，你和一只粉红色的熊站在一起。" },
   { slug: "us-02-changsha", group: "us", orient: "l",
-    caption: "墙上写着两个字，你在旁边。" },
+    caption: "粉墙上两个大字：长沙。你在旁边显得很白。" },
   { slug: "us-03-shop", group: "us", orient: "l",
     caption: "店门口的招牌是「躺平鸭」，你在一只粉色玩偶旁边站住了。" },
   { slug: "us-04-shop2", group: "us", orient: "l",
@@ -222,7 +222,7 @@ export const ABOUT = {
     "翻照片才发现，这五十八张里几乎每一张都有你——你是我拍得最多的人。",
     "你出门永远背着那个双肩包，里面装着水、充电宝，和一台电量永远在告急的手机。",
     "你不算健谈，但每次站在一座老建筑前面，你会突然讲很多——这块匾是哪一年立的，这个斗拱为什么非得这么做。别人看风景，你看的是风景是怎么被造出来的。",
-    "这五十八张，是四趟出门攒下来的：柳州的江，长沙的街，去年国庆那一天的一身汉服，还有今年夏天草原上那只羊驼。",
+    "这五十八张，是四趟出门攒下来的：湘江边的江与城，几座老院子和老戏台，去年国庆那一身汉服，还有今年夏天草原上那只羊驼。",
     "二十岁。愿你像名字里那只鹏——风起来的时候，就往上走。",
   ],
   facts: [

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { ABOUT, PHOTOS, fullSrc } from "../../data/content.js";
 
-// 关于屏的圆图：江边那天的第一张，笑得很松
-const portrait = PHOTOS.find((p) => p.slug === "river-01-luzhou");
+// 关于屏的圆图：湘江边那天的第一张，笑得很松
+const portrait = PHOTOS.find((p) => p.slug === "river-01-xiangjiang");
 
 const fade = {
   hidden: { opacity: 0, y: 24 },

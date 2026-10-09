@@ -29,8 +29,8 @@ os.makedirs(THUMB, exist_ok=True)
 # 分组：river 江与城 / arch 砖与瓦 / hall 馆与洞 / sword 仗剑 / us 我们
 SELECTION = [
     # ---------- 江与城 ----------
-    ("IMG_20250405_164123.jpg",      "river-01-luzhou",     "river"),
-    ("IMG_20250405_164128.jpg",      "river-02-luzhou2",    "river"),
+    ("IMG_20250405_164123.jpg",      "river-01-xiangjiang", "river"),
+    ("IMG_20250405_164128.jpg",      "river-02-xiangjiang2","river"),
     ("Image_735025201207784.jpg",    "river-03-four",       "river"),
     ("MVIMG_20250729_173033.jpg",    "river-04-skyline",    "river"),
     ("MVIMG_20250729_174231.jpg",    "river-05-mao",        "river"),

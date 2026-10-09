@@ -13,7 +13,7 @@ const SCREENS = [Cover, About, Moments, Letter];
 
 // 拖尾用的照片（缩略图，够小够快；方形裁切，优先挑有脸、有人的）
 const TRAIL = [
-  "river-01-luzhou",
+  "river-01-xiangjiang",
   "sword-01-white",
   "hall-16-mascot",
   "us-09-bench",
@@ -25,7 +25,7 @@ const TRAIL = [
 
 // 页脚圆图轮换（圆形裁切，同样优先人像/构图居中的）
 const FOOTER_IMG = [
-  "river-01-luzhou",
+  "river-01-xiangjiang",
   "sword-01-white",
   "hall-05-dome",
   "us-11-grass",

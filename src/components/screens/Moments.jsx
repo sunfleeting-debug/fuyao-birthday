@@ -5,7 +5,7 @@ import { LetterSwapPingPong } from "../LetterSwap.jsx";
 
 // 每个分组挑一张代表照
 const REPRESENTATIVE = {
-  river: "river-01-luzhou",
+  river: "river-01-xiangjiang",
   arch: "arch-01-temple",
   hall: "hall-12-cave",
   sword: "sword-01-white",
