@@ -8,3 +8,4 @@ dist-ssr
 *.log
 .shots
 .deploy-tmp
+dist-old-*/

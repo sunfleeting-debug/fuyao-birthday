@@ -3,13 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { GROUPS, MOMENTS, PHOTOS, fullSrc } from "../../data/content.js";
 import { LetterSwapPingPong } from "../LetterSwap.jsx";
 
-// 每个分组挑一张代表照
+// 每个分组挑一张代表照（key 必须与 content.js 的 GROUPS 一致）
 const REPRESENTATIVE = {
   river: "river-01-xiangjiang",
-  arch: "arch-01-temple",
-  hall: "hall-12-cave",
-  sword: "sword-01-white",
-  us: "us-11-grass",
+  yuelu: "arch-01-temple",
+  oldstreet: "us-02-changsha",
+  bookstore: "hall-03-balloon",
+  hefei: "sword-01-white",
+  wulong: "hall-12-cave",
 };
 
 const fade = {
@@ -51,7 +52,7 @@ export default function Moments() {
           </motion.p>
         </div>
 
-        {/* 五个分组的预览 */}
+        {/* 各分组的预览 */}
         <div className="mt-8 md:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {GROUPS.map((g, i) => {
             const photo = PHOTOS.find((p) => p.slug === REPRESENTATIVE[g.key]);

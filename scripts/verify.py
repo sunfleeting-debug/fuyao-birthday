@@ -80,11 +80,11 @@ with sync_playwright() as pw:
     page.wait_for_timeout(1300)
     shot(page, "09-gallery-all-desktop")
 
-    page.get_by_role("button", name=re.compile("^砖与瓦")).click()
+    page.get_by_role("button", name=re.compile("岳麓书院")).click()
     page.wait_for_timeout(1100)
-    shot(page, "10-gallery-arch-desktop")
+    shot(page, "10-gallery-yuelu-desktop")
 
-    page.get_by_role("button", name=re.compile("^我们")).click()
+    page.get_by_role("button", name=re.compile("武隆")).click()
     page.wait_for_timeout(1100)
     shot(page, "11-gallery-us-desktop")
 

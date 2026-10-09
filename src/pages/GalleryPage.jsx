@@ -188,7 +188,7 @@ export default function GalleryPage() {
               <div>
                 <p className="text-ink/35">地点</p>
                 <p className="text-ink/80 font-medium mt-0.5">
-                  江与城 · 老房子 · 洞与光
+                  长沙 · 合肥 · 重庆武隆
                 </p>
               </div>
               <div>

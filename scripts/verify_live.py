@@ -18,7 +18,8 @@ errs, failed = [], []
 checks = []
 
 # 分组名 -> 期望张数（与 content.js 的 GROUPS/PHOTOS 一致）
-GROUP_EXPECT = [("江与城", 8), ("砖与瓦", 13), ("馆与洞", 16), ("仗剑", 8), ("我们", 13)]
+GROUP_EXPECT = [("江与城", 8), ("岳麓书院", 4), ("寺与街", 12),
+                ("书店与展", 11), ("逍遥津与仗剑", 19), ("武隆", 4)]
 TOTAL = 58
 
 
@@ -72,7 +73,7 @@ with sync_playwright() as pw:
     page.screenshot(path=os.path.join(OUT, "F4-live-gallery.png"))
 
     for label, expect in GROUP_EXPECT:
-        page.get_by_role("button", name=re.compile("^" + label)).click()
+        page.get_by_role("button", name=re.compile(re.escape(label))).click()
         page.wait_for_timeout(1100)
         n = page.evaluate("() => document.querySelectorAll('figure img').length")
         ck(f"筛选「{label}」={expect}", n == expect, f"→ {n}")
