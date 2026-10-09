@@ -17,6 +17,9 @@ os.makedirs(OUT, exist_ok=True)
 errs, failed = [], []
 checks = []
 
+# 若本机 git/浏览器挂着失效的本地代理，可用 NO_PROXY_SERVER=1 让 Chromium 直连
+LAUNCH_ARGS = ["--no-proxy-server"] if os.environ.get("NO_PROXY_SERVER") else []
+
 # 分组名 -> 期望张数（与 content.js 的 GROUPS/PHOTOS 一致）
 GROUP_EXPECT = [("江与城", 8), ("岳麓书院", 4), ("寺与街", 12),
                 ("书店与展", 11), ("逍遥津与仗剑", 19), ("武隆", 4)]
@@ -29,7 +32,7 @@ def ck(name, ok, extra=""):
 
 
 with sync_playwright() as pw:
-    b = pw.chromium.launch(executable_path=str(EXE) if EXE else None)
+    b = pw.chromium.launch(executable_path=str(EXE) if EXE else None, args=LAUNCH_ARGS)
     ctx = b.new_context(viewport={"width": 1440, "height": 900})
     page = ctx.new_page()
     page.set_default_timeout(20000)
